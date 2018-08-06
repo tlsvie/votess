@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href={% static "js/bootstrap.js" %}>
+    <link rel="stylesheet" href={% static "css/bootstrap.css" %}>
+    <script src={% static 'js/jquery.min.js' %}></script>
+    <script src={% static 'js/bootstrap.js' %}></script>
+<style>
+    h1,h2,h3,h4,h5,p,div{
+        font-family: 微软雅黑;
+    }
+</style>
+</head>
+<body>
+{% include "account/header.html" %}
+{% block content %}{% endblock %}
+{% include "account/footer.html" %}
+</body>
+</html>
